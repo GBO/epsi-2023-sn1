@@ -37,7 +37,7 @@ Support de cours C++
 # Outillages
 Tous ces outils sont accessibles gratuitement pour les étudiants :
 * [Code::Blocks](http://www.codeblocks.org/) : Très souvent utilisé en éducation.
-* [JetBrains CLion](https://www.jetbrains.com/clion) : JetBrains c'est bien.
+* **[JetBrains CLion](https://www.jetbrains.com/clion)** : JetBrains c'est bien.
 * [Visual Studio](https://visualstudio.microsoft.com/fr/) : Outil Microsoft très réputé et très puissant : historiquement le meilleur.
 * [Visual Studio Code](https://code.visualstudio.com/) :
   * Configuration de barbu, l'IDE n'est pas spécialisé C++.
