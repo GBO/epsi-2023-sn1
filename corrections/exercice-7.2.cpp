@@ -32,22 +32,22 @@ public:
 class Personne {
 private:
   string nom;
-  Tete* tete;
+  Tete tete;
   Chapeau* chapeau;
 
 public:
-  Personne(string nom) {
+  Personne(string nom) : tete("Tete de " + nom) {
     this->nom = nom;
-    this->tete = new Tete("Tête de " + nom);
+    //this->tete = new Tete("Tête de " + nom);
     this->chapeau = nullptr;
   }
   ~Personne() {
-    delete this->tete;
+    //delete this->tete;
   }
 
   void afficher() {
     cout << "Personne : " << this->nom << " :" << endl;
-    this->tete->afficher();
+    this->tete.afficher();
     if (this->chapeau == nullptr) {
       cout << "Sans chapeau !" << endl;
     } else {
@@ -62,6 +62,8 @@ public:
 };
 
 int main(int argc, char **argv) {
+
+  Tete tete("Tête de Ghislain");
 
   Personne* ghislain = new Personne("Ghislain");
   ghislain->afficher();
