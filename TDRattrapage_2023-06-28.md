@@ -1,4 +1,4 @@
-# TDN1 - 15/06/2022
+# TDN1 - 28/06/2023
 
 **Attendu en fin de session** :
 * Une application console C++ dans un unique fichier .cpp dont le nom commence par **votre nom de famille** et contenant les sources des différents exercices.
@@ -46,8 +46,6 @@ Une annonce est au choix et dans l’ordre croissant de « puissance » :
 1. Une paire : 2 dés avec la même valeur
 2. Un brelan : 3 dés avec la même valeur
 3. Un full : une paire & un brelan
-4. Un carré : 4 dés avec la même valeur
-5. Un Yam’s : 5 dés avec la même valeur
 
 **Exigences** :
 * Le lancement d’un dé est un tir aléatoire entre 1 et 6.
@@ -62,11 +60,9 @@ Une annonce est au choix et dans l’ordre croissant de « puissance » :
 Ecrire une classe `Grille` implémentant un grille d’entiers à deux dimensions.
 
 **Exigences** :
-* La classe possède une représentation interne sous forme d’un `vector<int>`.
-* La classe est capable de convertir des coordonnées 2D (x, y) en coordonnées 1D (indice du `vector`) : en utilisant une formule du type `indice = x + y * largeur`.
-* Le constructeur prend en paramètre les dimensions de la grille (qui permet d’initialiser le `vector` avec la taille requise (hauteur x largeur)).
-* Une méthode `getValue` prenant en paramètre les coordonnées dans la grille et retournant la valeur aux coordonnées indiquées.
-* Une méthode `setValue` prenant en paramètre les coordonnées dans la grille ainsi que la valeur à affecter.
+* Le constructeur prend en paramètre les dimensions de la grille.
+* Une méthode `getValue` prenant en paramètre les coordonnées `x` & `y` dans la grille et retournant la valeur aux coordonnées indiquées.
+* Une méthode `setValue` prenant en paramètre les coordonnées `x` & `y` dans la grille ainsi que la valeur à affecter.
 * Une méthode `clear` permet de remettre à zéro toutes les valeurs de la grille.
 * Une méthode `display` permet d’afficher la grille.
 
@@ -74,6 +70,7 @@ Ecrire une classe `Grille` implémentant un grille d’entiers à deux dimension
 * Initialiser une grille de 20 par 20 et l’afficher.
 * Mettre des 1 dans les 2 diagonales (0x0, 1x1, 2x2, … Et 0x20, 1x19, 2x18, …).
 * Afficher la grille.
+* Refaire la même chose avec une 2ème grille de 10 par 10.
 
 
 
